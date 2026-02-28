@@ -1,0 +1,5 @@
+node_modules/
+generated/repos.json
+public/repos.json
+_site/
+.env

@@ -1,0 +1,14 @@
+{
+  "name": "github-repo-directory",
+  "version": "1.0.0",
+  "description": "A public static website listing curated GitHub repositories with activity metadata",
+  "private": true,
+  "scripts": {
+    "fetch": "node scripts/fetch_repos.js",
+    "validate": "node scripts/validate.js",
+    "serve": "npx serve public"
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.0"
+  }
+}

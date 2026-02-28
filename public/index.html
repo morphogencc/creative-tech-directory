@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creative Tech Tool Directory</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>Creative Tech Tool Directory</h1>
+      <p>Open-source tools for installations, live events, and immersive experiences &mdash; so we can stop rebuilding the same infrastructure</p>
+    </header>
+
+    <div class="controls" id="controls">
+      <input type="text" id="search" placeholder="Search repos..." />
+      <select id="filter-category">
+        <option value="">All Categories</option>
+      </select>
+      <select id="filter-status">
+        <option value="">All Statuses</option>
+        <option value="stable">Stable</option>
+        <option value="in-development">In Development</option>
+        <option value="new">New</option>
+        <option value="stale">Stale</option>
+        <option value="archived">Archived</option>
+      </select>
+      <select id="filter-language">
+        <option value="">All Languages</option>
+      </select>
+      <select id="sort">
+        <option value="stars">Stars</option>
+        <option value="last_commit">Last Commit</option>
+        <option value="name">Name</option>
+      </select>
+      <span class="result-count" id="result-count"></span>
+    </div>
+
+    <main class="repo-grid" id="repo-grid"></main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
