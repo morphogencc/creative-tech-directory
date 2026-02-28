@@ -1,1 +1,9 @@
-repos: []
+repos:
+- slug: morphogencc/ofxWindowsSetup
+  category: provisioning
+  notes: >
+    A set of powershell scripts to help with setting up Windows computer
+    for running interactive installations and kiosks.  Helps with
+    tasks like disabling windows update, removing taskbar, setting up
+    power features, etc. 
+  added_by: morphogencc
