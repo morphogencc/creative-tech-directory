@@ -35,7 +35,7 @@ function computeActivityStatus(createdAt, pushedAt, archived, commitPace) {
  * Returns average commits/week over the last 13 weeks (3 months).
  */
 function computeCommitPace(weeklyStats) {
-  if (!weeklyStats || weeklyStats.length === 0) return 0;
+  if (!Array.isArray(weeklyStats) || weeklyStats.length === 0) return 0;
 
   const recent = weeklyStats.slice(-13);
   const total = recent.reduce((sum, w) => sum + w.total, 0);
